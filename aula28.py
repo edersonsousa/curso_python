@@ -15,13 +15,12 @@ Se nada for digitado em nome ou idade:
 """
 nome = input('Digite seu nome: ')
 idade = input('Digite a sua idade: ')
-espaco = " "
 
-if (nome and idade):
+if nome and idade:
 
     print('Seu nome é : %s' % (nome))
     print('Sua idade é : %s' % (idade))
-    if espaco in nome:
+    if ' ' in nome:
         print("Teu nome contém espaço!")
     else:
         print("Não... Seu nome não contem espaço")
