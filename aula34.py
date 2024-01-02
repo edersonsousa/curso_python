@@ -7,7 +7,7 @@ Loop infinito -> Quando um código não tem fim
 condicao = True
 
 while condicao:
-    nome = input('Qual o seu nome: ')
+    nome = input('Qual o seu nome? Ou digite sair para sair... ')
     print(f'Seu nome é {nome}')
 
     if nome == 'sair':
