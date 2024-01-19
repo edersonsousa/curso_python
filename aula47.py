@@ -14,3 +14,25 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
+import os
+
+
+letras_acertadas=''
+palavra_secreta = "perfume"
+numero_de_tentativas = 0
+
+while True:
+    letra_digitada = input("Digite uma letra : ")
+    numero_de_tentativas =+ 1
+    
+    if len(letra_digitada) > 1:
+        print("Digite apenas uma palavra...")
+        continue
+
+    if letra_digitada in palavra_secreta:
+        letras_acertadas += letra_digitada
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            print(letra_secreta)
+        else:
+            print('*')
