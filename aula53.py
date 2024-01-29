@@ -4,6 +4,7 @@ enumerate - enumera iteráveis (índices)
 # [(0, 'Maria'), (1, 'Helena'), (2, 'Luiz'), (3, 'João')]
 lista = ['Maria', 'Helena', 'Luiz']
 lista.append('João')
+lista.append('EdersoN')
 print("enumerate - enumera iteráveis (índices)")
 
 for indice, nome in enumerate(lista):
